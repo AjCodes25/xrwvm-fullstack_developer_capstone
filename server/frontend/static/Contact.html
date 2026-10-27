@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Best Cars Dealership</title>
+    <!-- CSS Links configured for standard static directory structure in Django -->
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="/static/bootstrap.min.css">
+    <style>
+        .contact-hero {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 50px 0;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .contact-card {
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            border: none;
+            background: #fff;
+        }
+        .banner-img {
+            border-radius: 12px;
+            height: 220px;
+            object-fit: cover;
+            width: 100%;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body class="bg-light">
+    <!-- Navigation Bar with active Contact Us -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <h2 class="text-white pe-4">Best Cars Dealership</h2>
+            <div class="navbar-nav me-auto">
+                <a class="nav-item nav-link" href="/">Home</a>
+                <a class="nav-item nav-link" href="/about">About Us</a>
+                <a class="nav-item nav-link active" href="/contact">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Header -->
+    <div class="contact-hero">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Contact Us</h1>
+            <p class="lead max-w-75 mx-auto">
+                Have questions or need assistance? Reach out to our nationwide dealership support team.
+            </p>
+        </div>
+    </div>
+
+    <!-- Images Banner -->
+    <div class="container mb-5">
+        <div class="row g-4">
+            <div class="col-md-6">
+                <img src="/static/contactus.png" onerror="this.src='https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=700&q=80'" class="banner-img" alt="Contact Us Customer Service">
+            </div>
+            <div class="col-md-6">
+                <img src="/static/cars.jpeg" onerror="this.src='https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=700&q=80'" class="banner-img" alt="Best Cars Showroom">
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Details & Form Section -->
+    <div class="container my-4">
+        <div class="row g-4 justify-content-center">
+            
+            <!-- Left Side: Corporate Headquarters Details -->
+            <div class="col-md-5">
+                <div class="card contact-card p-4 h-100">
+                    <h3 class="fw-bold mb-3" style="color: #1e3c72;">Corporate Headquarters</h3>
+                    <p class="text-muted small">
+                        Visit or contact our national headquarters located in Topeka, Kansas for corporate relations, dealership franchises, and consumer support.
+                    </p>
+                    <hr class="my-3">
+                    
+                    <ul class="list-unstyled mb-4">
+                        <li class="mb-3">
+                            <strong class="text-dark d-block">📍 Address:</strong>
+                            <span class="text-secondary">1200 Kansas Ave, Topeka, KS 66612</span>
+                        </li>
+                        <li class="mb-3">
+                            <strong class="text-dark d-block">📞 Phone:</strong>
+                            <span class="text-secondary">+1 (785) 555-0199 / Toll-Free: 1-800-555-CARS</span>
+                        </li>
+                        <li class="mb-3">
+                            <strong class="text-dark d-block">✉️ Email:</strong>
+                            <span class="text-secondary">contact@bestcarsdealership.com</span>
+                        </li>
+                        <li class="mb-3">
+                            <strong class="text-dark d-block">⏰ Business Hours:</strong>
+                            <span class="text-secondary">Monday - Friday: 9:00 AM - 6:00 PM CST<br>Saturday: 10:00 AM - 4:00 PM CST</span>
+                        </li>
+                    </ul>
+
+                    <div class="alert alert-info py-2 px-3 small mt-auto mb-0">
+                        🚗 Customer care is available 24/7 online through our dealership review portal.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Side: Contact Form -->
+            <div class="col-md-7">
+                <div class="card contact-card p-4 h-100">
+                    <h3 class="fw-bold mb-3" style="color: #1e3c72;">Send Us a Message</h3>
+                    <form action="#" method="POST" onsubmit="event.preventDefault(); alert('Thank you for contacting us! We will respond shortly.');">
+                        <div class="row g-3 mb-3">
+                            <div class="col-md-6">
+                                <label class="form-label small fw-semibold">Your Name</label>
+                                <input type="text" class="form-control" placeholder="Full Name" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label small fw-semibold">Your Email</label>
+                                <input type="email" class="form-control" placeholder="name@example.com" required>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label small fw-semibold">Subject</label>
+                            <input type="text" class="form-control" placeholder="Inquiry Subject" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label small fw-semibold">Message</label>
+                            <textarea class="form-control" rows="5" placeholder="Write your question or feedback..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary w-100 py-2 fw-semibold" style="background-color: #1e3c72; border-color: #1e3c72;">
+                            Submit Inquiry
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center py-4 bg-white border-top mt-5">
+        <p class="text-muted small mb-0">&copy; 2026 Best Cars Dealership. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

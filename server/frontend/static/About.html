@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Best Cars Dealership</title>
+    <!-- Correct CSS Links configured for Django static directory -->
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="/static/bootstrap.min.css">
+    <style>
+        .about-hero {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 50px 0;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .team-card {
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            overflow: hidden;
+            border: none;
+        }
+        .team-card:hover {
+            transform: translateY(-5px);
+        }
+        .team-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body class="bg-light">
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <h2 class="text-white pe-4">Best Cars Dealership</h2>
+            <div class="navbar-nav me-auto">
+                <a class="nav-item nav-link" href="/">Home</a>
+                <a class="nav-item nav-link active" href="/about">About Us</a>
+                <a class="nav-item nav-link" href="/contact">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Header -->
+    <div class="about-hero">
+        <div class="container">
+            <h1 class="display-4 fw-bold">About Us</h1>
+            <p class="lead max-w-75 mx-auto">
+                Welcome to Best Cars dealership, home to the best cars in North America. We deal in selling domestic and imported cars at reasonable prices, offering transparency through verified consumer reviews across the continent.
+            </p>
+        </div>
+    </div>
+
+    <!-- Leadership Team Profiles -->
+    <div class="container my-5">
+        <h2 class="text-center fw-bold mb-5" style="color: #1e3c72;">Meet Our Leadership Team</h2>
+        <div class="row g-4 justify-content-center">
+            
+            <!-- Person 1: CEO -->
+            <div class="col-md-4">
+                <div class="card team-card h-100">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=500&q=80" alt="Marcus Vance">
+                    <div class="card-body text-center p-4">
+                        <h4 class="card-title fw-bold text-dark">Marcus Vance</h4>
+                        <p class="text-primary fw-semibold mb-2">Chief Executive Officer</p>
+                        <p class="card-text text-muted small">
+                            Marcus brings over 20 years of automotive leadership, steering corporate expansion and strategic enterprise values across the American Midwest.
+                        </p>
+                        <hr>
+                        <p class="text-secondary small mb-0"><strong>Email:</strong> marcus.vance@bestcars.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Person 2: COO -->
+            <div class="col-md-4">
+                <div class="card team-card h-100">
+                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=500&q=80" alt="Sarah Jenkins">
+                    <div class="card-body text-center p-4">
+                        <h4 class="card-title fw-bold text-dark">Sarah Jenkins</h4>
+                        <p class="text-primary fw-semibold mb-2">Chief Operating Officer</p>
+                        <p class="card-text text-muted small">
+                            Sarah connects millions of dealership visitors with localized services, maintaining highest-tier dealer trust metrics and dealer relations.
+                        </p>
+                        <hr>
+                        <p class="text-secondary small mb-0"><strong>Email:</strong> sarah.jenkins@bestcars.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Person 3: Lead Software Developer -->
+            <div class="col-md-4">
+                <div class="card team-card h-100">
+                    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=500&q=80" alt="Ajinkya Mangave">
+                    <div class="card-body text-center p-4">
+                        <h4 class="card-title fw-bold text-dark">Ajinkya Mangave</h4>
+                        <p class="text-primary fw-semibold mb-2">Lead Full-Stack Developer</p>
+                        <p class="card-text text-muted small">
+                            Ajinkya leads full-stack engineering, architecting the Django REST APIs, React frontend, Node.js microservices, and containerized deployments.
+                        </p>
+                        <hr>
+                        <p class="text-secondary small mb-0"><strong>Email:</strong> ajinkya.mangave@bestcars.com</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center py-4 bg-white border-top mt-5">
+        <p class="text-muted small mb-0">&copy; 2026 Best Cars Dealership. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
