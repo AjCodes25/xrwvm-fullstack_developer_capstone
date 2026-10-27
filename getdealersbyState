@@ -2,23 +2,16 @@ curl -X GET "https://capstone-developer-3030.theiadocker-3-labs-prod-theia-labs-
 
 [
   {
-    "id": 15,
+    "_id": "69005cc8a875fa4b66cb4c08",
+    "id": 8,
     "city": "Topeka",
     "state": "Kansas",
-    "address": "1200 Kansas Ave",
-    "zip": "66612",
-    "lat": 39.0473,
-    "short_name": "Topeka Motors",
-    "full_name": "Topeka Best Cars Dealership"
-  },
-  {
-    "id": 29,
-    "city": "Wichita",
-    "state": "Kansas",
-    "address": "1500 E Douglas Ave",
-    "zip": "67214",
-    "lat": 37.6865,
-    "short_name": "Wichita Cars",
-    "full_name": "Wichita Auto Outlet"
+    "address": "288 Larry Place",
+    "zip": "66642",
+    "lat": "39.0429",
+    "long": "-95.7697",
+    "short_name": "Bytecard",
+    "full_name": "Bytecard Car Dealership",
+    "__v": 0
   }
 ]

@@ -8,27 +8,27 @@
     <link rel="stylesheet" href="/static/style.css">
     <link rel="stylesheet" href="/static/bootstrap.min.css">
     <style>
-        .about-hero {
+        .banner {
             background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
             color: white;
-            padding: 50px 0;
+            padding: 40px 20px;
             text-align: center;
-            margin-bottom: 40px;
+            margin-bottom: 30px;
         }
-        .team-card {
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease;
-            overflow: hidden;
-            border: none;
+        .card {
+            border: 1px solid #e2e8f0;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
         }
-        .team-card:hover {
+        .card:hover {
             transform: translateY(-5px);
         }
-        .team-card img {
-            width: 100%;
+        .card-img-top {
             height: 250px;
             object-fit: cover;
+            border-top-left-radius: 9px;
+            border-top-right-radius: 9px;
         }
     </style>
 </head>
@@ -45,65 +45,59 @@
         </div>
     </nav>
 
-    <!-- Hero Header -->
-    <div class="about-hero">
+    <!-- Main Header & Description -->
+    <div class="banner">
         <div class="container">
             <h1 class="display-4 fw-bold">About Us</h1>
             <p class="lead max-w-75 mx-auto">
-                Welcome to Best Cars dealership, home to the best cars in North America. We deal in selling domestic and imported cars at reasonable prices, offering transparency through verified consumer reviews across the continent.
+                Welcome to Best Cars dealership, home to the best cars in North America. We deal in sale of domestic and imported cars at reasonable prices.
             </p>
         </div>
     </div>
 
-    <!-- Leadership Team Profiles -->
+    <!-- Three Team Members Grid -->
     <div class="container my-5">
-        <h2 class="text-center fw-bold mb-5" style="color: #1e3c72;">Meet Our Leadership Team</h2>
+        <h2 class="text-center fw-bold mb-4" style="color: #1e3c72;">Our Team</h2>
         <div class="row g-4 justify-content-center">
             
-            <!-- Person 1: CEO -->
+            <!-- Member 1: Mily -->
             <div class="col-md-4">
-                <div class="card team-card h-100">
-                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=500&q=80" alt="Marcus Vance">
+                <div class="card h-100">
+                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=500&q=80" class="card-img-top" alt="Mily">
                     <div class="card-body text-center p-4">
-                        <h4 class="card-title fw-bold text-dark">Marcus Vance</h4>
+                        <h4 class="card-title fw-bold">Mily</h4>
+                        <p class="text-primary fw-semibold mb-2">Engineer</p>
+                        <p class="card-text text-muted">Hi I am Mily.I am a front end engineer</p>
+                        <hr>
+                        <p class="text-secondary small mb-0"><strong>Email:</strong> mily@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Member 2: Marcus Vance -->
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=500&q=80" class="card-img-top" alt="Marcus Vance">
+                    <div class="card-body text-center p-4">
+                        <h4 class="card-title fw-bold">Marcus Vance</h4>
                         <p class="text-primary fw-semibold mb-2">Chief Executive Officer</p>
-                        <p class="card-text text-muted small">
-                            Marcus brings over 20 years of automotive leadership, steering corporate expansion and strategic enterprise values across the American Midwest.
-                        </p>
+                        <p class="card-text text-muted">Marcus brings over 20 years of automotive leadership, steering corporate expansion across North America.</p>
                         <hr>
                         <p class="text-secondary small mb-0"><strong>Email:</strong> marcus.vance@bestcars.com</p>
                     </div>
                 </div>
             </div>
 
-            <!-- Person 2: COO -->
+            <!-- Member 3: Sarah Jenkins -->
             <div class="col-md-4">
-                <div class="card team-card h-100">
-                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=500&q=80" alt="Sarah Jenkins">
+                <div class="card h-100">
+                    <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=500&q=80" class="card-img-top" alt="Sarah Jenkins">
                     <div class="card-body text-center p-4">
-                        <h4 class="card-title fw-bold text-dark">Sarah Jenkins</h4>
+                        <h4 class="card-title fw-bold">Sarah Jenkins</h4>
                         <p class="text-primary fw-semibold mb-2">Chief Operating Officer</p>
-                        <p class="card-text text-muted small">
-                            Sarah connects millions of dealership visitors with localized services, maintaining highest-tier dealer trust metrics and dealer relations.
-                        </p>
+                        <p class="card-text text-muted">Sarah connects millions of dealership visitors with localized services, maintaining highest-tier dealer trust metrics.</p>
                         <hr>
                         <p class="text-secondary small mb-0"><strong>Email:</strong> sarah.jenkins@bestcars.com</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Person 3: Lead Software Developer -->
-            <div class="col-md-4">
-                <div class="card team-card h-100">
-                    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=500&q=80" alt="Ajinkya Mangave">
-                    <div class="card-body text-center p-4">
-                        <h4 class="card-title fw-bold text-dark">Ajinkya Mangave</h4>
-                        <p class="text-primary fw-semibold mb-2">Lead Full-Stack Developer</p>
-                        <p class="card-text text-muted small">
-                            Ajinkya leads full-stack engineering, architecting the Django REST APIs, React frontend, Node.js microservices, and containerized deployments.
-                        </p>
-                        <hr>
-                        <p class="text-secondary small mb-0"><strong>Email:</strong> ajinkya.mangave@bestcars.com</p>
                     </div>
                 </div>
             </div>

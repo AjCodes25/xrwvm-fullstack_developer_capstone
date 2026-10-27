@@ -2,47 +2,20 @@ curl -X GET "https://capstone-developer-8000.theiadocker-3-labs-prod-theia-labs-
 
 {
   "CarModels": [
-    {
-      "id": 1,
-      "make": "Audi",
-      "model": "A6",
-      "type": "SEDAN",
-      "year": 2010
-    },
-    {
-      "id": 2,
-      "make": "Audi",
-      "model": "Q7",
-      "type": "SUV",
-      "year": 2018
-    },
-    {
-      "id": 3,
-      "make": "Audi",
-      "model": "A4",
-      "type": "SEDAN",
-      "year": 2015
-    },
-    {
-      "id": 4,
-      "make": "Toyota",
-      "model": "Camry",
-      "type": "SEDAN",
-      "year": 2021
-    },
-    {
-      "id": 5,
-      "make": "Toyota",
-      "model": "RAV4",
-      "type": "SUV",
-      "year": 2022
-    },
-    {
-      "id": 6,
-      "make": "Toyota",
-      "model": "Sienna",
-      "type": "WAGON",
-      "year": 2020
-    }
+    {"CarModel": "Pathfinder", "CarMake": "NISSAN"},
+    {"CarModel": "Qashqai", "CarMake": "NISSAN"},
+    {"CarModel": "XTRAIL", "CarMake": "NISSAN"},
+    {"CarModel": "A-Class", "CarMake": "Mercedes"},
+    {"CarModel": "C-Class", "CarMake": "Mercedes"},
+    {"CarModel": "E-Class", "CarMake": "Mercedes"},
+    {"CarModel": "A4", "CarMake": "Audi"},
+    {"CarModel": "A5", "CarMake": "Audi"},
+    {"CarModel": "A6", "CarMake": "Audi"},
+    {"CarModel": "Sorrento", "CarMake": "Kia"},
+    {"CarModel": "Carnival", "CarMake": "Kia"},
+    {"CarModel": "Cerato", "CarMake": "Kia"},
+    {"CarModel": "Corolla", "CarMake": "Toyota"},
+    {"CarModel": "Camry", "CarMake": "Toyota"},
+    {"CarModel": "Kluger", "CarMake": "Toyota"}
   ]
 }
